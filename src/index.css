@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #444;
+  --sage: #edf1d6;
+  --green: #9dc08b;
+  --nature: #609966;
+  --earth: #40513b;
 }

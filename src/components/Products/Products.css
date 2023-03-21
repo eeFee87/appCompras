@@ -1,7 +1,6 @@
 .products {
-  display: flex;
-  color: white;
-  font-size: 2rem;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--green);
+}
+.products button {
+  background-color: var(--earth);
 }
