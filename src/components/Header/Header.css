@@ -10,3 +10,16 @@
 .container h1 {
   font-size: 2.5rem;
 }
+header .group_button {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+header .group_button button {
+  margin-right: 0.5rem;
+}
+header .button {
+  background-color: var(--nature);
+  border: 1px solid var(--earth);
+}

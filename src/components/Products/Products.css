@@ -4,3 +4,6 @@
 .products button {
   background-color: var(--earth);
 }
+.products li {
+  list-style: none;
+}
