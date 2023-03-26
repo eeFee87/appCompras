@@ -1,17 +1,25 @@
 import './Products.css';
-import products from '../../data/products.json';
+
 import ProductCard from '../ProductCard/ProductCard';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 import loadProductsService from '../../services/services';
 
 const Products = () => {
-  /* useEffect(() => {
-    loadProductsService();
-  }, []); */
+  const [products, setProducts] = useState();
+  useEffect(() => {
+    const getdata = async () => {
+      const data = await loadProductsService();
+
+      setProducts(data);
+    };
+    getdata();
+  }, []);
+
   return (
     <main className="products ">
       <ul className="d-flex flex-wrap justify-content-center">
-        {products.map((item) => {
+        {products?.map((item) => {
           return (
             <li className="d-flex" key={item.id}>
               <ProductCard product={item} />
